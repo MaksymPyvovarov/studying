@@ -1,0 +1,14 @@
+x = input("Enter binary number: ")
+i = len(x) - 1
+
+power = 0
+number = 0
+
+while i != -1: 
+    if int(x[i]) == 1:
+        number += (2  ** power)
+    
+    power += 1
+    i -= 1
+
+print(number)

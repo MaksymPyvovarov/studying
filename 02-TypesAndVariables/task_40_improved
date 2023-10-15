@@ -1,0 +1,10 @@
+x = input("Enter credit card number: ")
+y = str("")
+i = 0
+
+while i != len(x):
+    for j in range(4):
+        y += x[i + j]
+    i += 4
+    y += " "
+print(y)
