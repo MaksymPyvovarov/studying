@@ -5,6 +5,9 @@ i = 0
 while i != len(x):
     for j in range(4):
         y += x[i + j]
+    if j + i == len(x) - 1 :
+        break
     i += 4
     y += " "
+    
 print(y)
